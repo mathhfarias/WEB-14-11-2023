@@ -1,0 +1,81 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#nav{
+    position: fixed;
+    left:0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aquamarine;
+}
+#nav ul{
+    display: flex;
+    list-style: none;
+    gap:10px;
+}
+#nav ul li{
+    cursor:pointer;
+    padding: 5px;
+}
+#nav ul li:hover{
+    background-image: linear-gradient( to right, rgb(50, 5, 50), rgb(235, 235, 182));
+}
+
+#nav.ativo{
+    background-image: linear-gradient( to right, rgb(158, 26, 77), rgb(249, 249, 171)); 
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+
+.efeito{
+ width: 400px;
+ height: 600px;
+ animation:  transition 10s infinite;
+ margin: 0 auto;
+}
+
+@keyframes transition {
+0% {
+    border-radius: 0px;
+     background:transparent;
+     padding: 0px;
+}
+5%{
+    padding: 5px;
+}
+20%{
+    background: #191970;
+    padding: 5px;
+}
+40%{
+    background-image: linear-gradient(to left, #00FFFF,#40E0D0,	#063c3a) ;
+    padding: 5px;
+}
+60%{
+    background-image: linear-gradient(to left, #cbe343,#e6f590,	#fbf843) ;
+    padding: 5px;
+}
+80%{
+    background-image: linear-gradient(to left, #a7589f,#8b117d,	#f789f0) ;
+    padding: 5px;
+}
+90%{
+    background-image: linear-gradient(to left, #f49356,#eb9813,	#af570a) ;
+    padding: 5px;
+}
+100%{
+    border-radius: 600px;
+    background-color: #92ff38;
+    padding: 5%;
+}
+
+} 
